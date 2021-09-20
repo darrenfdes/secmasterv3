@@ -1,3 +1,5 @@
+import { MatButtonModule } from '@angular/material/button';
+import { MatTableModule } from '@angular/material/table';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { SecurityComponent } from './security/security.component';
@@ -17,7 +19,9 @@ import { MatListModule } from '@angular/material/list';
     CommonModule,
     MatCardModule,
     MatDividerModule,
-    MatListModule
+    MatListModule,
+    MatTableModule,
+    MatButtonModule
   ]
 })
 export class SecMasterViewModule { }

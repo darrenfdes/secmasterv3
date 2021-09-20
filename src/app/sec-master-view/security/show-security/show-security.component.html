@@ -1,4 +1,5 @@
-<mat-card>        
+<mat-card tabindex="0"> 
+    <table >
         <thead>
             <tr>
                 <th>Security ID</th>
@@ -13,8 +14,9 @@
                         <td>{{item.securityname}}</td>
                         <td>{{item.securitydescription}}</td>
                         <td>
-                            <button  (click)="softDelete(item.sid)">Delete</button>
+                            <button (click)="softDelete(item.sid)" mat-button color="warn">Delete</button>
                         </td>
                     </tr>
                 </tbody>
+    </table>               
 </mat-card>

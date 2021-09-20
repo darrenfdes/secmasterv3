@@ -17,6 +17,7 @@ import { MatIconModule} from '@angular/material/icon';
 import { MatCardModule } from '@angular/material/card';
 import { SharedService } from './sec-master-view/shared.service';
 import { MatDividerModule } from '@angular/material/divider';
+import {MatTableModule} from '@angular/material/table';
 
 
 @NgModule({
@@ -38,7 +39,8 @@ import { MatDividerModule } from '@angular/material/divider';
     MatListModule,
     MatIconModule,
     MatCardModule,
-    MatDividerModule
+    MatDividerModule,
+    MatTableModule
   ],
   providers: [UploadService,SharedService],
   bootstrap: [AppComponent]
