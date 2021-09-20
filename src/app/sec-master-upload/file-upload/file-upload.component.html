@@ -1,0 +1,10 @@
+<input type="file" #fileInput (change)="onFileInput(fileInput.files)" />
+<button
+  [disabled]="!file"
+  type="submit"
+  mat-raised-button
+  color="primary"
+  (click)="onSubmit()"
+>
+  Submit
+</button>
